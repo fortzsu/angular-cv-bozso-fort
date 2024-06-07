@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { InfosComponent } from './infos/infos.component';
 import { BasicInfosComponent } from './infos/basic-infos/basic-infos.component';
-import { InfoPageComponent } from './infos/info-page/info-page.component';
-import { InfoPageElementComponent } from './infos/info-page/info-page-element/info-page-element.component';
+import { InfoPageElementComponent } from './infos/info-page-element/info-page-element.component';
+import { WorksComponent } from './infos/works/works.component';
+import { ExperienceComponent } from './infos/experience/experience.component';
+import { EducationSkillsComponent } from './infos/education-skills/education-skills.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,10 @@ import { InfoPageElementComponent } from './infos/info-page/info-page-element/in
     HeaderComponent,
     InfosComponent,
     BasicInfosComponent,
-    InfoPageComponent,
-    InfoPageElementComponent
+    InfoPageElementComponent,
+    WorksComponent,
+    ExperienceComponent,
+    EducationSkillsComponent
   ],
   imports: [
     BrowserModule,
