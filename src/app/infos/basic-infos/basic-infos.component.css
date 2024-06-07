@@ -1,0 +1,10 @@
+img {
+  width: 40%;
+}
+span {
+  margin: 5%;
+}
+.holder-class {
+  border: 1px solid grey;
+  padding: 5%;
+}

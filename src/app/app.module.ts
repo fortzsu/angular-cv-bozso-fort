@@ -10,6 +10,7 @@ import { InfoPageElementComponent } from './infos/info-page-element/info-page-el
 import { WorksComponent } from './infos/works/works.component';
 import { ExperienceComponent } from './infos/experience/experience.component';
 import { EducationSkillsComponent } from './infos/education-skills/education-skills.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EducationSkillsComponent } from './infos/education-skills/education-ski
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
