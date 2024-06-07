@@ -1,1 +1,5 @@
-<p>education-skills works!</p>
+<div  *ngFor="let education of educationSkills">
+  <h4 class="list-group-item-heading">{{education.dates}}</h4>
+  <p class="list-group-item-text">{{education.title}}</p>
+  <p class="list-group-item-text">{{education.description}}</p>
+</div>

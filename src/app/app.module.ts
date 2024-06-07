@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { InfosComponent } from './infos/infos.component';
 import { BasicInfosComponent } from './infos/basic-infos/basic-infos.component';
-import { InfoPageElementComponent } from './infos/info-page-element/info-page-element.component';
 import { WorksComponent } from './infos/works/works.component';
 import { ExperienceComponent } from './infos/experience/experience.component';
 import { EducationSkillsComponent } from './infos/education-skills/education-skills.component';
@@ -18,7 +17,6 @@ import {NgOptimizedImage} from "@angular/common";
     HeaderComponent,
     InfosComponent,
     BasicInfosComponent,
-    InfoPageElementComponent,
     WorksComponent,
     ExperienceComponent,
     EducationSkillsComponent
