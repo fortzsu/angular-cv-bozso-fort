@@ -4,19 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BasicInfoPageComponent } from './basic-info-page/basic-info-page.component';
-import { InfoPageComponent } from './info-page/info-page.component';
-import { InfoPageElementComponent } from './info-page-element/info-page-element.component';
-import { ErrorPageComponent } from './error-page/error-page.component';
+import { InfosComponent } from './infos/infos.component';
+import { BasicInfosComponent } from './infos/basic-infos/basic-infos.component';
+import { InfoPageComponent } from './infos/info-page/info-page.component';
+import { InfoPageElementComponent } from './infos/info-page/info-page-element/info-page-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BasicInfoPageComponent,
+    InfosComponent,
+    BasicInfosComponent,
     InfoPageComponent,
-    InfoPageElementComponent,
-    ErrorPageComponent
+    InfoPageElementComponent
   ],
   imports: [
     BrowserModule,
