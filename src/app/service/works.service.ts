@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {WorkInfoModel} from "../model/work-info.model";
 
 @Injectable({
   providedIn: 'root'
@@ -7,8 +8,18 @@ export class WorksService {
 
   constructor() { }
 
-  //https://github.com/fortzsu/hand-history-replayer-app - csak Java
-  //https://github.com/fortzsu/hand-history-replayer-spring - java+angular works
-  //https://github.com/fortzsu/theater_reticket - theater-reticket
-  //https://github.com/fortzsu/angular-cv-bozso-fort
+  works: WorkInfoModel[] = [
+    new WorkInfoModel('Theatre Reticket', 'description',
+      'https://github.com/fortzsu/theater_reticket'),
+    new WorkInfoModel('Hand history replayer - Angular & Java', 'desciption',
+      'https://github.com/fortzsu/hand-history-replayer-spring'),
+    new WorkInfoModel('Hand history replayer - Plain Java & HTML', 'desciption',
+      'https://github.com/fortzsu/hand-history-replayer-app'),
+    new WorkInfoModel('CV site', 'description',
+    'https://github.com/fortzsu/angular-cv-bozso-fort')
+  ]
+
+  getWorks(): WorkInfoModel[] {
+    return this.works.slice();
+  }
 }
