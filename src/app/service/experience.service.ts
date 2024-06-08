@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-import {EducationInfoModel} from "../model/education-info.model";
 import {ExperienceInfoModel} from "../model/experience-info.model";
 
 @Injectable({
@@ -7,12 +6,12 @@ import {ExperienceInfoModel} from "../model/experience-info.model";
 })
 export class ExperienceService {
 
-  private experiences: ExperienceInfoModel[] = [
+  experiences: ExperienceInfoModel[] = [
     new ExperienceInfoModel('2021.09. - ', 'Maternity Leave', [
       'Implementing my own backend hobby project (ticket handler application) from scratch, ' +
       'using Java SE, REST API, Spring Boot.',
       'Improved skills: effective troubleshooting, flexibility and logistics'
-    ]),
+    ], ''),
     new ExperienceInfoModel('2020.10. - 2023.06.', 'Junior Software Developer', [
       'Tasks in inner-company development projects (GIT, Maven, Java, Spring Boot)',
       'Mentoring bootcamp students: support Agile teamwork and planning, debugging code',
@@ -36,5 +35,9 @@ export class ExperienceService {
   ]
 
   constructor() {
+  }
+
+  getExperience(): ExperienceInfoModel[] {
+    return this.experiences.slice();
   }
 }
