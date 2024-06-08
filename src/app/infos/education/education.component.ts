@@ -3,11 +3,11 @@ import {EducationInfoModel} from "../../model/education-info.model";
 import {EducationService} from "../../service/education.service";
 
 @Component({
-  selector: 'app-education-skills',
-  templateUrl: './education-skills.component.html',
-  styleUrl: './education-skills.component.css'
+  selector: 'app-education',
+  templateUrl: './education.component.html',
+  styleUrl: './education.component.css'
 })
-export class EducationSkillsComponent implements OnInit{
+export class EducationComponent implements OnInit{
 
   educationSkills: EducationInfoModel[];
 

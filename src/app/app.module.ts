@@ -8,8 +8,9 @@ import { InfosComponent } from './infos/infos.component';
 import { BasicInfosComponent } from './infos/basic-infos/basic-infos.component';
 import { WorksComponent } from './infos/works/works.component';
 import { ExperienceComponent } from './infos/experience/experience.component';
-import { EducationSkillsComponent } from './infos/education-skills/education-skills.component';
+import { EducationComponent } from './infos/education/education.component';
 import {NgOptimizedImage} from "@angular/common";
+import { SkillsComponent } from './infos/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {NgOptimizedImage} from "@angular/common";
     BasicInfosComponent,
     WorksComponent,
     ExperienceComponent,
-    EducationSkillsComponent
+    EducationComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
