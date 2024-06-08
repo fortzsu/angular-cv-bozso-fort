@@ -1,10 +1,14 @@
-<div class="holder-class" *ngFor="let experience of experiences">
+<div class="holder-class" *ngFor="let experience of experiences; index as i">
   <p>{{ experience.dates }}</p>
   <p>{{ experience.role }}</p>
   <p>{{ experience.company }}</p>
-  <div *ngFor="let task of experience.tasks">
-    <ul>
-      <li>{{ task }}
-    </ul>
+  <button *ngIf="!isTasksShown" class="btn btn-primary" (click)="onShowTasks()">Show more</button>
+  <button *ngIf="isTasksShown" class="btn btn-primary" (click)="onHideTasks()">Show less</button>
+  <div *ngIf="isTasksShown">
+    <div *ngFor="let task of experience.tasks">
+      <ul>
+        <li>{{ task }}
+      </ul>
+    </div>
   </div>
 </div>

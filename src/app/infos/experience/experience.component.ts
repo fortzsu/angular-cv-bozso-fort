@@ -9,6 +9,8 @@ import {ExperienceInfoModel} from "../../model/experience-info.model";
 })
 export class ExperienceComponent implements OnInit{
 
+  isTasksShown: boolean = false;
+
   experiences: ExperienceInfoModel[];
 
   constructor(private experienceService: ExperienceService) {
@@ -18,4 +20,11 @@ export class ExperienceComponent implements OnInit{
     this.experiences = this.experienceService.getExperience();
   }
 
+  onShowTasks() {
+    this.isTasksShown = true;
+  }
+
+  onHideTasks() {
+    this.isTasksShown = false;
+  }
 }
