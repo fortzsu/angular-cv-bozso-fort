@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {InfoModel} from "../info.model";
-import {InfoService} from "../../info.service";
+import {EducationInfoModel} from "../../model/education-info.model";
+import {EducationService} from "../../service/education.service";
 
 @Component({
   selector: 'app-education-skills',
@@ -9,9 +9,9 @@ import {InfoService} from "../../info.service";
 })
 export class EducationSkillsComponent implements OnInit{
 
-  educationSkills: InfoModel[];
+  educationSkills: EducationInfoModel[];
 
-  constructor(private infoService: InfoService) {
+  constructor(private infoService: EducationService) {
   }
 
   ngOnInit() {
