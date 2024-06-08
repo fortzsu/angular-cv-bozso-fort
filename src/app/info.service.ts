@@ -7,7 +7,7 @@ import {InfoModel} from "./infos/info.model";
 export class InfoService {
 
   private education: InfoModel[] = [
-    new InfoModel('2019.11. - 2020.04.', 'PROGmasters',
+    new InfoModel('2019.11. - 2020.04.', 'PROGmasters - Bootcamp',
       'Java full-stack software developer course' ),
     new InfoModel('2015.09. - 2019.01.', 'Károli Gáspár University of the Reformed Church in Hungary',
       'Master of Arts in Theatre Studies Msc.' ),
