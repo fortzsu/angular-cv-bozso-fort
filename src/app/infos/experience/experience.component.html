@@ -1,9 +1,9 @@
+<button *ngIf="!isTasksShown" class="btn btn-primary" (click)="onShowTasks()">Show more</button>
+<button *ngIf="isTasksShown" class="btn btn-primary" (click)="onHideTasks()">Show less</button>
 <div class="holder-class" *ngFor="let experience of experiences; index as i">
   <p>{{ experience.dates }}</p>
-  <p>{{ experience.role }}</p>
+  <p style="font-weight: bold">{{ experience.role }}</p>
   <p>{{ experience.company }}</p>
-  <button *ngIf="!isTasksShown" class="btn btn-primary" (click)="onShowTasks()">Show more</button>
-  <button *ngIf="isTasksShown" class="btn btn-primary" (click)="onHideTasks()">Show less</button>
   <div *ngIf="isTasksShown">
     <div *ngFor="let task of experience.tasks">
       <ul>

@@ -1,4 +1,10 @@
 .holder-class {
   border: 1px solid grey;
-  padding: 5%;
+  padding: 2%;
+  box-shadow: 1px 1px 1px grey;
+  margin: 2%;
+}
+
+button {
+  margin: 1%;
 }
