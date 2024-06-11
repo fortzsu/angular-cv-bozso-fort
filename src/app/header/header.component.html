@@ -1,11 +1,18 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="collapse navbar-collapse">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li routerLinkActive="active"><a routerLink="/works">Works</a></li>
-        <li routerLinkActive="active"><a routerLink="/experience">Experience</a></li>
-        <li routerLinkActive="active"><a routerLink="/education">Education</a></li>
-        <li routerLinkActive="active"><a routerLink="/skills">Skills</a></li>
+        <li routerLinkActive="active" class="nav nav-item"><a routerLink="/works">Works</a></li>
+        <li routerLinkActive="active" class="nav nav-item"><a routerLink="/experience">Experience</a></li>
+        <li routerLinkActive="active" class="nav nav-item"><a routerLink="/education">Education</a></li>
+        <li routerLinkActive="active" class="nav nav-item"><a routerLink="/skills">Skills</a></li>
       </ul>
     </div>
   </div>
