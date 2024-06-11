@@ -20,6 +20,10 @@ export class ExperienceComponent implements OnInit{
     this.experiences = this.experienceService.getExperience();
   }
 
+  onTasks() {
+    this.isTasksShown = !this.isTasksShown;
+  }
+
   onShowTasks() {
     this.isTasksShown = true;
   }
