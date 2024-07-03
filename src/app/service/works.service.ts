@@ -18,12 +18,12 @@ export class WorksService {
     new WorkInfoModel(
       'Hand history replayer',
       ['Java', 'Angular', 'REST API', 'Spring Boot'],
-      'Full-Stack App for parsing Poker Hands and display values',
+      'Full-Stack App for parsing Poker Hand History file',
       'https://github.com/fortzsu/hand-history-replayer-spring'),
     new WorkInfoModel(
       'Hand history replayer',
       ['Java', 'HTML'],
-      'App for parsing Poker Hands from .txt to Java objects',
+      'App for parsing Poker Hand History .txt to Java objects',
       'https://github.com/fortzsu/hand-history-replayer-app'),
     new WorkInfoModel(
       'This CV site',
