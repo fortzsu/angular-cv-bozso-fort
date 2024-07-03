@@ -1,12 +1,15 @@
-<div style="text-align: left" class="holder-class" *ngFor="let work of works">
+<div class="holder-class" *ngFor="let work of works">
   <span>
     <a [href]=work.link
        target="_blank"
        routerLinkActive="active">
       {{ work.title }}</a> | {{ work.description }}
-    <div style="margin-top: 2%">
-    <ul  *ngFor="let highlight of work.highlights">
-    <li>{{ highlight }}</li>
+    <div>
+       <p>{{ work.technologies }}</p>
+     </div>
+    <div id="holder-div">
+    <ul *ngFor="let highlight of work.highlights">
+    <li style="text-align: left;">{{ highlight }}</li>
     </ul>
       </div>
   </span>

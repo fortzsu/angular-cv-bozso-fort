@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {WorkInfoModel} from "../model/work-info.model";
 
 @Injectable({
@@ -6,14 +6,16 @@ import {WorkInfoModel} from "../model/work-info.model";
 })
 export class WorksService {
 
-  constructor() { }
+  constructor() {
+  }
 
   works: WorkInfoModel[] = [
     new WorkInfoModel(
       'Theatre Reticket',
-      ['Java', 'Spring Boot', 'REST API', 'SQL', 'OAuth 2.0', 'Google (Sheets) API', 'JPA Criteria Queries'],
+      ['Google (Sheets) API', 'JPA Criteria Queries'],
       'Event ticket (re)handling application with reporting',
-      'https://github.com/fortzsu/theater_reticket'),
+      'https://github.com/fortzsu/theater_reticket',
+      'Java - Spring Boot - REST API - SQL - OAuth 2.0 - MapStruct - Lombok'),
     new WorkInfoModel(
       'Hand history replayer',
       ['Java', 'Angular', 'REST API', 'Spring Boot'],
@@ -28,7 +30,7 @@ export class WorksService {
       'This CV site',
       [],
       'Angular - Firebase',
-    'https://github.com/fortzsu/angular-cv-bozso-fort')
+      'https://github.com/fortzsu/angular-cv-bozso-fort')
   ]
 
   getWorks(): WorkInfoModel[] {
