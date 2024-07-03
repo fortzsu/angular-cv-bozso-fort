@@ -8,12 +8,11 @@ export class ExperienceService {
 
   experiences: ExperienceInfoModel[] = [
     new ExperienceInfoModel('2021.09. - ', 'Maternity Leave', [
-      'Implementing my own backend hobby project (ticket handler application) from scratch, ' +
-      'using Java SE, REST API, Spring Boot.',
+      'Implementing my own hobby projects from scratch, using JavaSE, REST API, Spring Boot and Angular.',
       'Improved skills: effective troubleshooting, flexibility and logistics'
     ], ''),
     new ExperienceInfoModel('2020.10. - 2023.06.', 'Junior Software Developer', [
-      'Tasks in inner-company development projects (GIT, Maven, Java, Spring Boot)',
+      'Tasks in inner-company development projects (GIT, Maven, JavaSE, Spring Boot)',
       'Mentoring bootcamp students: support Agile teamwork and planning, debugging code',
       'Creating frontend teaching materials (HTML, SCSS, CSS, JS, Angular)'
     ], 'PROGmasters'),
