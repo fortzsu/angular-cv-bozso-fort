@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
 
   languages: string[] = [
-    'English - Advanced', 'German - Upper Intermediate', 'Spanish - Elementary'
+    'English - Advanced', 'German - Intermediate', 'Spanish - Elementary'
   ]
 
   technicalSkills: string[] = [

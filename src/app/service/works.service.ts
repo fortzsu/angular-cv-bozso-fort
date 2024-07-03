@@ -27,8 +27,8 @@ export class WorksService {
       'https://github.com/fortzsu/hand-history-replayer-app'),
     new WorkInfoModel(
       'This CV site',
-      [],
-      'Angular - Firebase',
+      ['Angular - Firebase'],
+      'Zsuzsanna\'s site',
       'https://github.com/fortzsu/angular-cv-bozso-fort')
   ]
 
