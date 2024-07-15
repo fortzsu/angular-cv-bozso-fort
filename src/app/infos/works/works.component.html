@@ -12,8 +12,8 @@
     <div>
        <p>{{ work.technologies }}</p>
      </div>
-    <div id="holder-div">
-    <ul *ngFor="let highlight of work.highlights">
+    <div id="holder-div" *ngFor="let highlight of work.highlights">
+    <ul>
     <li style="text-align: left;">{{ highlight }}</li>
     </ul>
       </div>
